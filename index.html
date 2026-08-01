@@ -3,190 +3,398 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Aayush Jaiswal, B.Tech CSE AI student focused on artificial intelligence, backend systems, REST APIs, and automation."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Michael</title>
+    <title>Aayush Jaiswal | AI & Backend Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div class="nav__bar">
-        <a href="#"><span class="logo nav__logo">M</span> Michael</a>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-      </div>
+    <div class="side-rays-container" id="side-rays" aria-hidden="true">
+      <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home" class="brand" aria-label="Aayush Jaiswal home">
+        <span class="brand__mark">AJ</span>
+        <span>Aayush Jaiswal</span>
+      </a>
+
+      <button class="nav__toggle" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="ri-menu-3-line" aria-hidden="true"></i>
+      </button>
+
       <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav__resume">
+            <i class="ri-download-2-line" aria-hidden="true"></i>
+            Resume
+          </a>
+        </li>
       </ul>
-      <a href="#contact" class="btn btn__large">Contact</a>
     </nav>
-    <header class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="assets/header.jpg" alt="header" />
-      </div>
-      <div class="header__content">
-        <div>
-          <h1>Michael<br />User Interface<br />Designer</h1>
-        </div>
-        <p class="section__description">
-          I'm a dedicated web developer with a creative flair and a penchant for
-          turning lines of code into captivating online experiences. My journey
-          in the digital realm began years ago, and I've since honed my skills
-          in front-end and back-end development.
-        </p>
-        <div class="header__btn">
-          <button class="btn">Hire Me Now</button>
-        </div>
-      </div>
-    </header>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
-        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
-        <img src="assets/about.jpg" alt="about" class="about__img" />
-      </div>
-      <div class="about__content">
-        <h2 class="section__header">Bit About Me</h2>
-        <p class="section__description">
-          A passionate web developer with a creative flair and a knack for
-          turning visions into reality. My journey in web development began with
-          a fascination for coding and design, and it has evolved into a career
-          where I blend aesthetics with functionality. With a focus on user
-          experience and a commitment to staying updated with the latest
-          industry trends, I'm dedicated to creating web solutions that not only
-          meet but exceed expectations.
-        </p>
-        <div class="about__btn">
-          <button class="btn">Download CV</button>
-        </div>
-      </div>
-    </section>
+    <main>
+      <header class="hero section__container" id="home">
+        <div class="hero__content">
+          <p class="eyebrow reveal-text">Computer Science Engineering (AI)</p>
+          <h1
+            class="hero__title text-type reveal-text"
+            data-text-type
+            data-texts="Building modern web experiences and scalable backend systems.|Creating responsive interfaces with clean frontend code.|Developing practical web projects, APIs, and automation workflows."
+          >
+            Building modern web experiences and scalable backend systems.
+          </h1>
+          <p class="hero__summary reveal-text">
+            B.Tech Computer Science Engineering student with a strong interest
+            in web development, Artificial Intelligence, backend systems, and
+            automation. Experienced in HTML, CSS, JavaScript, Python scripting,
+            REST API integration, Git workflows, and building responsive
+            user-focused interfaces.
+          </p>
 
-    <section class="section__container service__container" id="service">
-      <h2 class="section__header">My Best Services</h2>
-      <div class="service__grid">
-        <div class="service__card">
-          <span><i class="ri-window-fill"></i></span>
-          <h4>Website Design</h4>
-          <p>
-            We craft user-friendly interfaces that engage visitors and help you
-            achieve your online goals with minimum efforts.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-store-line"></i></span>
-          <h4>E-commerce Solutions</h4>
-          <p>
-            We build secure, scalable, and user-centric online stores that
-            enhance the shopping experience and drive conversions.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-smartphone-line"></i></span>
-          <h4>Mobile Development</h4>
-          <p>
-            From iOS to Android, we create apps that deliver seamless
-            performance and keep users coming back for more.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-share-fill"></i></span>
-          <h4>Content Marketing</h4>
-          <p>
-            Our services include creating blog posts, videos, and social media
-            content that drives traffic and engagement.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-seo-line"></i></span>
-          <h4>SEO</h4>
-          <p>
-            Our SEO strategies are tailored to your specific goals, helping you
-            reach your target audience and grow your online presence.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-share-circle-line"></i></span>
-          <h4>Digital Marketing</h4>
-          <p>
-            From pay-per-click (PPC) advertising to social media marketing, we
-            ensure your brand stands out in the crowded digital landscape.
-          </p>
-        </div>
-      </div>
-    </section>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
+              <i class="ri-mail-send-line" aria-hidden="true"></i>
+              Email Me
+            </a>
+            <a class="btn btn--ghost" href="#projects">
+              <i class="ri-folder-code-line" aria-hidden="true"></i>
+              View Projects
+            </a>
+          </div>
 
-    <section class="section__container portfolio__container" id="portfolio">
-      <h2 class="section__header">My Portfolio</h2>
-      <p class="section__description">
-        Explore a showcase of my diverse projects, demonstrating my skills in
-        web development, design, and beyond. Each project reflects my passion
-        for creating impactful and innovative digital experiences.
-      </p>
-      <div class="portfolio__grid">
-        <div class="portfolio__card">
-          <img src="assets/project-1.jpg" alt="portfolio" />
+          <div class="hero__meta" aria-label="Contact details">
+            <span><i class="ri-map-pin-line" aria-hidden="true"></i>Chandigarh, India</span>
+            <span><i class="ri-phone-line" aria-hidden="true"></i>+91-628495306</span>
+          </div>
         </div>
-        <div class="portfolio__card">
-          <img src="assets/project-2.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-3.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-4.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-5.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-6.jpg" alt="portfolio" />
-        </div>
-      </div>
-      <div class="portfolio__banner">
-        <div class="portfolio__banner__card">
-          <span><i class="ri-macbook-line"></i></span>
-          <h4>150+ Projects</h4>
-          <p>Delivered</p>
-        </div>
-        <div class="portfolio__banner__card">
-          <span><i class="ri-discuss-line"></i></span>
-          <h4>1500+ Happy</h4>
-          <p>Customers</p>
-        </div>
-        <div class="portfolio__banner__card">
-          <span><i class="ri-heart-fill"></i></span>
-          <h4>2700+ Lovely</h4>
-          <p>Feedbacks</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="section__container contact__container" id="contact">
-      <div class="logo">M</div>
-      <h2 class="section__header">Let's Talk With Me!</h2>
-      <p class="section__description">
-        An open invitation to connect, and exploring collaborative opportunities
-        on my personal portfolio website.
-      </p>
-      <div class="contact__socials">
-        <a href="#"><i class="ri-twitter-fill"></i></a>
-        <a href="#"><i class="ri-linkedin-fill"></i></a>
-        <a href="#"><i class="ri-behance-fill"></i></a>
-        <a href="#"><i class="ri-dribbble-line"></i></a>
-        <a href="#"><i class="ri-pinterest-line"></i></a>
-      </div>
-    </section>
-    <footer class="footer">
-      Copyright © 2023 Web Design Mastery. All rights reserved.
+        <div class="avatar-card" aria-label="Aayush Jaiswal profile avatar">
+          <div class="avatar-card__ring">
+            <img
+              src="assets/hacker-avatar.jpg"
+              alt="Hacker-style portfolio avatar"
+            />
+          </div>
+          <div class="avatar-card__body">
+            <span>Portfolio Profile</span>
+            <h2>Aayush Jaiswal</h2>
+            <p>AI student focused on automation, APIs, and backend systems.</p>
+          </div>
+          <div class="hero__panel">
+            <span>Highlights</span>
+            <strong>CGPA 8.9</strong>
+            <strong>100+ DSA</strong>
+            <strong>Web Dev</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="section__container about" id="about">
+        <div class="section__intro">
+          <p class="eyebrow">About</p>
+          <h2>Practical engineering mindset with an AI-first direction.</h2>
+        </div>
+        <div class="about__grid">
+          <p>
+            Aayush Jaiswal is focused on building real-world automation
+            solutions and scalable backend systems. His work combines Python,
+            REST API integration, operating system automation, and disciplined
+            Git workflows.
+          </p>
+          <div class="quickfacts">
+            <div>
+              <span>Current Degree</span>
+              <strong>B.Tech CSE (AI)</strong>
+            </div>
+            <div>
+              <span>College CGPA</span>
+              <strong>8.9</strong>
+            </div>
+            <div>
+              <span>DSA Progress</span>
+              <strong>100+ Problems Solved</strong>
+            </div>
+            <div>
+              <span>Core Strength</span>
+              <strong>Automation Workflows</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container" id="education">
+        <div class="section__intro">
+          <p class="eyebrow">Education</p>
+          <h2>Academic foundation</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__year">2025-2029</span>
+            <div>
+              <h3>Chandigarh University</h3>
+              <p>B.Tech in Computer Science Engineering (Artificial Intelligence) - CGPA 8.9</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2024-2025</span>
+            <div>
+              <h3>St. Soldier Divine Public School</h3>
+              <p>Class XII (PCM) - 92.3%</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2022-2023</span>
+            <div>
+              <h3>GEMS Cambridge International School, Hoshiarpur</h3>
+              <p>Class X - 96.8%</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section__container" id="projects">
+        <div class="section__intro section__intro--split">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <p>
+            Projects centered on automation, API integration, rapid prototyping,
+            and practical problem solving.
+          </p>
+        </div>
+
+        <div class="project__grid">
+          <article class="project__card project__card--featured">
+            <div class="project__icon">
+              <i class="ri-mic-line" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="project__label">Python Automation</p>
+              <h3>Voice-Controlled PC Automation System</h3>
+              <ul>
+                <li>Designed and developed a voice-controlled automation system to execute operating system commands using Python.</li>
+                <li>Implemented speech recognition to process voice inputs and trigger system-level actions.</li>
+                <li>Integrated REST APIs for automating WhatsApp messaging and email communication.</li>
+                <li>Built scalable automation workflows to handle multiple tasks efficiently.</li>
+                <li>Reduced manual effort and improved productivity through intelligent task automation.</li>
+              </ul>
+              <a class="project__link" href="https://github.com/" target="_blank" rel="noreferrer">
+                <i class="ri-github-fill" aria-hidden="true"></i>
+                GitHub Link
+              </a>
+            </div>
+          </article>
+
+          <article class="project__card">
+            <div class="project__icon">
+              <i class="ri-lightbulb-flash-line" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="project__label">Hackathon</p>
+              <h3>IDEA 2.0 Hackathon Project</h3>
+              <ul>
+                <li>Collaborated in a team-based hackathon environment to design and develop an innovative solution under time constraints.</li>
+                <li>Contributed to idea development, system design, and implementation of core features.</li>
+                <li>Applied problem-solving and rapid prototyping skills to build a functional project.</li>
+                <li>Demonstrated teamwork, communication, and adaptability in a competitive setting.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="minor-projects" aria-label="Minor projects carousel">
+          <div class="minor-projects__heading">
+            <p class="eyebrow">Minor Projects</p>
+            <h3>Practice builds and UI clones</h3>
+          </div>
+          <div class="flashcard-track">
+            <div class="flashcard-row">
+              <article class="flashcard">
+                <i class="ri-spotify-fill" aria-hidden="true"></i>
+                <h4>Spotify Clone</h4>
+                <p>Responsive music UI practice with polished layout and media controls.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
+                <h4>Amazon Clone</h4>
+                <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-code-box-line" aria-hidden="true"></i>
+                <h4>JavaScript Practice</h4>
+                <p>Small interactive UI experiments built to strengthen frontend logic.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-terminal-box-line" aria-hidden="true"></i>
+                <h4>Python Utilities</h4>
+                <p>Automation scripts for everyday system tasks and workflow helpers.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-spotify-fill" aria-hidden="true"></i>
+                <h4>Spotify Clone</h4>
+                <p>Responsive music UI practice with polished layout and media controls.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
+                <h4>Amazon Clone</h4>
+                <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-code-box-line" aria-hidden="true"></i>
+                <h4>JavaScript Practice</h4>
+                <p>Small interactive UI experiments built to strengthen frontend logic.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+              <article class="flashcard">
+                <i class="ri-terminal-box-line" aria-hidden="true"></i>
+                <h4>Python Utilities</h4>
+                <p>Automation scripts for everyday system tasks and workflow helpers.</p>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container skills" id="skills">
+        <div class="section__intro">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical toolkit</h2>
+        </div>
+
+        <div class="skills__layout">
+          <article class="skill__group">
+            <h3><i class="ri-code-s-slash-line" aria-hidden="true"></i>Languages</h3>
+            <div class="tags">
+              <button type="button" class="tag">Python</button>
+              <button type="button" class="tag">C</button>
+              <button type="button" class="tag">C++</button>
+            </div>
+          </article>
+          <article class="skill__group">
+            <h3><i class="ri-window-line" aria-hidden="true"></i>Web</h3>
+            <div class="tags">
+              <button type="button" class="tag">HTML</button>
+              <button type="button" class="tag">CSS</button>
+              <button type="button" class="tag">JavaScript</button>
+              <button type="button" class="tag">Express.js</button>
+              <button type="button" class="tag">Node.js</button>
+              <button type="button" class="tag">MongoDB</button>
+            </div>
+          </article>
+          <article class="skill__group">
+            <h3><i class="ri-tools-line" aria-hidden="true"></i>Tools</h3>
+            <div class="tags">
+              <button type="button" class="tag">Git</button>
+              <button type="button" class="tag">GitHub</button>
+              <button type="button" class="tag">Netlify</button>
+            </div>
+          </article>
+          <article class="skill__group">
+            <h3><i class="ri-node-tree" aria-hidden="true"></i>Concepts</h3>
+            <div class="tags">
+              <button type="button" class="tag">REST APIs</button>
+              <button type="button" class="tag">Automation</button>
+              <button type="button" class="tag">Backend Development</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section__container credentials">
+        <div class="section__intro section__intro--split">
+          <div>
+            <p class="eyebrow">Credentials</p>
+            <h2>Certifications and achievements</h2>
+          </div>
+        </div>
+
+        <div class="credential__grid">
+          <article>
+            <i class="ri-microsoft-line" aria-hidden="true"></i>
+            <h3>Microsoft Azure Certified</h3>
+            <p>Cloud fundamentals, Azure services, and AI/ML tools.</p>
+          </article>
+          <article>
+            <i class="ri-brain-line" aria-hidden="true"></i>
+            <h3>Coursera AI & Machine Learning Certification</h3>
+            <p>Foundational AI and machine learning concepts.</p>
+          </article>
+          <article>
+            <i class="ri-trophy-line" aria-hidden="true"></i>
+            <h3>100+ DSA Problems</h3>
+            <p>Solved data structures and algorithms problems on coding platforms.</p>
+          </article>
+          <article>
+            <i class="ri-team-line" aria-hidden="true"></i>
+            <h3>Additional Strengths</h3>
+            <p>Team collaboration, analytical thinking, and problem solving.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section__container" id="contact">
+        <div class="contact__card">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build useful automation together.</h2>
+          <p>
+            Available for learning-focused collaborations, hackathon work, and
+            backend or automation projects.
+          </p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              aayush.jaiswal1917@gmail.com
+            </a>
+            <a class="btn btn--ghost" href="tel:+91628495306">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              +91-628495306
+            </a>
+          </div>
+
+          <div class="socials" aria-label="Social links">
+            <a class="socials__gmail" href="mailto:aayush.jaiswal1917@gmail.com" aria-label="Gmail">
+              <i class="ri-mail-fill" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn profile">
+              <i class="ri-linkedin-fill" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/" aria-label="GitHub profile">
+              <i class="ri-github-fill" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram profile">
+              <i class="ri-instagram-line" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" aria-label="Twitter profile">
+              <i class="ri-twitter-fill" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
