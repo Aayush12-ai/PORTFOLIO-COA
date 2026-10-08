@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Featured engineering projects, COA assignments, Computer Architecture simulators, Python automation, and software developments by Aayush Jaiswal."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projects & COA Coursework | Aayush Jaiswal</title>
+  </head>
+  <body>
+    <div class="side-rays-container" id="side-rays" aria-hidden="true">
+      <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#home" class="brand" aria-label="Aayush Jaiswal home">
+        <span class="brand__mark">AJ</span>
+        <span>Aayush Jaiswal</span>
+      </a>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <i class="ri-sun-line" aria-hidden="true"></i>
+        </button>
+
+        <button class="nav__toggle" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <i class="ri-menu-3-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="interests.html">Academic Interests / Future Goals</a></li>
+        <li><a href="coa-tool.html">COA Learning Tool</a></li>
+        <li><a href="gallery.html">Gallery & Achievements</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav__resume">
+            <i class="ri-download-2-line" aria-hidden="true"></i>
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Page Header -->
+      <section class="section__container page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+          <span>Projects & Coursework</span>
+        </div>
+        <div class="section__intro">
+          <p class="eyebrow">Portfolio Showcase & Coursework</p>
+          <h1>Projects, Architecture Simulators & Academic Work</h1>
+        </div>
+      </section>
+
+      <!-- Main Projects Section -->
+      <section class="section__container" style="padding-top:0;">
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="coa">COA & Architecture</button>
+          <button type="button" class="filter-btn" data-filter="coursework">Coursework & PDFs</button>
+          <button type="button" class="filter-btn" data-filter="automation">AI & Automation</button>
+          <button type="button" class="filter-btn" data-filter="web">Web & Practice</button>
+        </div>
+
+        <div class="projects-showcase-grid">
+          <!-- CARD 1: COA ASSIGNMENT 1 (PDF DOWNLOAD & PREVIEW) -->
+          <article class="project-showcase-card project-showcase-card--highlight" data-category="coursework coa">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--coa"><i class="ri-file-pdf-line" aria-hidden="true"></i> Academic Coursework</span>
+                <span class="badge badge--meta">ID: 25BAI10042</span>
+              </div>
+              <div class="project__icon project__icon--coa">
+                <i class="ri-file-text-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">COA Submission • 25BAI10042</p>
+              <h2>COA Assignment 1</h2>
+              <p class="project-showcase-card__desc">
+                Official academic coursework submission for Computer Organization & Architecture (COA). 
+                Includes rigorous analytical derivations for positional radix conversions, binary arithmetic, 
+                addressing mode operations, and CPU memory mapping.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Radix number systems: Binary, Octal, Decimal, and Hexadecimal representations</span>
+                </div>
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Arithmetic Logic Unit calculations, 2's complement, and overflow detection</span>
+                </div>
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Instruction cycle analysis and memory addressing derivations</span>
+                </div>
+              </div>
+
+              <div class="file-info-chip">
+                <div class="file-info-chip__icon">
+                  <i class="ri-file-pdf-fill" aria-hidden="true"></i>
+                </div>
+                <div class="file-info-chip__details">
+                  <strong>25bai10042 _Aayush_jaiswal.pdf</strong>
+                  <span>PDF Document • Complete Solution & Coursework</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="25bai10042 _Aayush_jaiswal.pdf"
+                  download="COA_Assignment_1_25BAI10042.pdf"
+                  class="btn btn--primary"
+                  id="download-coa-assignment"
+                >
+                  <i class="ri-download-2-line" aria-hidden="true"></i>
+                  Download COA Assignment 1
+                </a>
+                <a
+                  href="25bai10042 _Aayush_jaiswal.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--ghost"
+                >
+                  <i class="ri-eye-line" aria-hidden="true"></i>
+                  View PDF
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: COA PROJECT 1 - COA ADDRESS SIMULATOR (GITHUB LINK) -->
+          <article class="project-showcase-card project-showcase-card--highlight" data-category="coa">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--github"><i class="ri-github-fill" aria-hidden="true"></i> COA Project 1</span>
+                <span class="badge badge--featured">Hardware Simulation</span>
+              </div>
+              <div class="project__icon project__icon--simulator">
+                <i class="ri-cpu-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Computer Organization & Architecture</p>
+              <h2>COA Project 1: COA Address Simulator</h2>
+              <p class="project-showcase-card__desc">
+                An interactive hardware architecture simulation tool designed to model computer memory addressing, 
+                effective address calculation, page translation, and offset decoding in modern processor architectures.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Effective address calculation for Direct, Indirect, Indexed, and Base-Register modes</span>
+                </div>
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Visualized memory mapping, register state transitions, and bus communication</span>
+                </div>
+                <div class="feature-item">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  <span>Open-source codebase with clean modular design and extensible hardware logic</span>
+                </div>
+              </div>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">COA Project 1</span>
+                <span class="tag">Address Simulator</span>
+                <span class="tag">Memory Mapping</span>
+                <span class="tag">Computer Architecture</span>
+                <span class="tag">Simulation</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Aayush12-ai/Address-simulator.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--primary"
+                  id="github-coa-address-simulator"
+                >
+                  <i class="ri-github-fill" aria-hidden="true"></i>
+                  COA Address Simulator (GitHub)
+                </a>
+                <a
+                  href="coa-tool.html"
+                  class="btn btn--ghost"
+                >
+                  <i class="ri-calculator-line" aria-hidden="true"></i>
+                  COA Number Tool
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: COA NUMBER SYSTEM CONVERTER (LIVE TOOL) -->
+          <article class="project-showcase-card" data-category="coa web">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--coa"><i class="ri-flashlight-line" aria-hidden="true"></i> Live Interactive Tool</span>
+              </div>
+              <div class="project__icon">
+                <i class="ri-binary-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Interactive Educational Tool</p>
+              <h3>COA Number System Converter & Visualizer</h3>
+              <p class="project-showcase-card__desc">
+                Real-time multi-base radix conversion engine supporting Binary, Octal, Decimal, and Hexadecimal 
+                with step-by-step mathematical derivations and interactive bit-level nibble breakdown.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">Radix Conversion</span>
+                <span class="tag">Bit Visualization</span>
+                <span class="tag">JavaScript BigInt</span>
+                <span class="tag">Educational UI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="coa-tool.html" class="btn btn--primary">
+                  <i class="ri-external-link-line" aria-hidden="true"></i>
+                  Launch Live Tool
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4: VOICE-CONTROLLED PC AUTOMATION -->
+          <article class="project-showcase-card" data-category="automation">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--meta"><i class="ri-mic-line" aria-hidden="true"></i> Python Automation</span>
+              </div>
+              <div class="project__icon">
+                <i class="ri-mic-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Python Automation & API Integration</p>
+              <h3>Voice-Controlled PC Automation System</h3>
+              <p class="project-showcase-card__desc">
+                Voice-activated command execution engine in Python with real-time speech recognition, 
+                system-level command automation, WhatsApp messaging integration, and automated email workflows.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">Python</span>
+                <span class="tag">Speech Recognition</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">OS Automation</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="btn btn--ghost">
+                  <i class="ri-github-fill" aria-hidden="true"></i>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5: BHARAT BUILDATHON (IDC) -->
+          <article class="project-showcase-card" data-category="automation">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--featured"><i class="ri-trophy-line" aria-hidden="true"></i> 2nd Place Winner</span>
+                <span class="badge badge--meta">Organised by IDC</span>
+              </div>
+              <div class="project__icon" style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: #061311;">
+                <i class="ri-trophy-fill" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">National Hackathon Award</p>
+              <h3>2nd Place - Bharat Buildathon (IDC)</h3>
+              <p class="project-showcase-card__desc">
+                Secured 2nd Place in the national Bharat Buildathon organized by IDC. Designed and developed an innovative engineering system within an intensive hackathon sprint.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">Bharat Buildathon</span>
+                <span class="tag">IDC Organised</span>
+                <span class="tag">2nd Place</span>
+                <span class="tag">Rapid Prototyping</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="gallery.html" class="btn btn--primary">
+                  <i class="ri-award-line" aria-hidden="true"></i>
+                  View in Gallery
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6: TEKATHON 5.0 -->
+          <article class="project-showcase-card" data-category="automation">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--github"><i class="ri-fire-fill" aria-hidden="true"></i> Tekathon 5.0</span>
+                <span class="badge badge--meta">Selected Finalist</span>
+              </div>
+              <div class="project__icon" style="background: linear-gradient(135deg, var(--accent), #10b981); color: #061311;">
+                <i class="ri-fire-fill" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Hackathon Selection & Finalist</p>
+              <h3>Selected in Tekathon 5.0</h3>
+              <p class="project-showcase-card__desc">
+                Selected among top contending engineering teams in Tekathon 5.0, demonstrating rapid prototype execution, scalable architecture, and problem-solving excellence.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">Tekathon 5.0</span>
+                <span class="tag">Selected Finalist</span>
+                <span class="tag">Competitive Hackathon</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="gallery.html" class="btn btn--ghost">
+                  <i class="ri-award-line" aria-hidden="true"></i>
+                  View Milestone
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 7: IDEA 2.0 HACKATHON PROJECT -->
+          <article class="project-showcase-card" data-category="automation">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--featured"><i class="ri-lightbulb-flash-line" aria-hidden="true"></i> Hackathon</span>
+              </div>
+              <div class="project__icon">
+                <i class="ri-lightbulb-flash-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Rapid Prototyping & System Design</p>
+              <h3>IDEA 2.0 Hackathon Project</h3>
+              <p class="project-showcase-card__desc">
+                Time-constrained rapid prototyping project built during the IDEA 2.0 Hackathon. 
+                Focused on end-to-end architecture, collaborative feature delivery, and functional MVP creation.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">Hackathon</span>
+                <span class="tag">System Design</span>
+                <span class="tag">Rapid Prototyping</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="gallery.html" class="btn btn--ghost">
+                  <i class="ri-award-line" aria-hidden="true"></i>
+                  View Hackathon Award
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6: SPOTIFY & AMAZON UI CLONES -->
+          <article class="project-showcase-card" data-category="web">
+            <div class="project-showcase-card__header">
+              <div class="project-showcase-card__badge-row">
+                <span class="badge badge--meta"><i class="ri-layout-masonry-line" aria-hidden="true"></i> Frontend Builds</span>
+              </div>
+              <div class="project__icon">
+                <i class="ri-code-box-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="project-showcase-card__content">
+              <p class="project__label">Frontend UI & Practice Builds</p>
+              <h3>Modern UI Clones & Web Experiments</h3>
+              <p class="project-showcase-card__desc">
+                Interactive web UI clones including a responsive Spotify music player interface, 
+                an Amazon e-commerce catalog layout, and modular JavaScript problem visualizers.
+              </p>
+
+              <div class="tags" style="margin-block: 1rem;">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">Responsive UI</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Media Player</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="btn btn--ghost">
+                  <i class="ri-github-fill" aria-hidden="true"></i>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

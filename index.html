@@ -1,403 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Aayush Jaiswal, B.Tech CSE AI student focused on artificial intelligence, backend systems, REST APIs, and automation."
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Aayush Jaiswal | AI & Backend Portfolio</title>
-  </head>
-  <body>
-    <div class="side-rays-container" id="side-rays" aria-hidden="true">
-      <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
-    </div>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#home" class="brand" aria-label="Aayush Jaiswal home">
-        <span class="brand__mark">AJ</span>
-        <span>Aayush Jaiswal</span>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Aayush Jaiswal, B.Tech CSE AI student specializing in Artificial Intelligence, Machine Learning, backend systems, and automation." />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Aayush Jaiswal | AI & ML Engineering Portfolio</title>
+</head>
+
+<body>
+  <div class="side-rays-container" id="side-rays" aria-hidden="true">
+    <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
+  </div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#home" class="brand" aria-label="Aayush Jaiswal home">
+      <span class="brand__mark">AJ</span>
+      <span>Aayush Jaiswal</span>
+    </a>
+
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme"
+        title="Toggle theme">
+        <i class="ri-sun-line" aria-hidden="true"></i>
+      </button>
 
       <button class="nav__toggle" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
         <i class="ri-menu-3-line" aria-hidden="true"></i>
       </button>
+    </div>
 
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="nav__cta">Contact</a></li>
-        <li>
-          <a href="resume.pdf" download class="nav__resume">
-            <i class="ri-download-2-line" aria-hidden="true"></i>
-            Resume
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="interests.html">Academic Interests / Future Goals</a></li>
+      <li><a href="coa-tool.html">COA Learning Tool</a></li>
+      <li><a href="gallery.html">Gallery & Achievements</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li>
+        <a href="resume.pdf" download class="nav__resume">
+          <i class="ri-download-2-line" aria-hidden="true"></i>
+          Resume
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="hero section__container" id="home">
+      <div class="hero__content">
+        <p class="eyebrow reveal-text">Computer Science Engineering • AI & Machine Learning</p>
+        <h1 class="hero__title text-type reveal-text" data-text-type
+          data-texts="Developing AI/ML systems and intelligent workflows.|Building scalable machine learning models and backend APIs.|Bridging core computer architecture with modern intelligent software.">
+          Developing AI/ML systems and intelligent workflows.
+        </h1>
+        <p class="hero__summary reveal-text">
+          B.Tech Computer Science Engineering student focused on Artificial Intelligence,
+          Machine Learning, data structures, backend engineering, and intelligent automation.
+          Passionate about building scalable AI-driven solutions and high-performance software systems.
+        </p>
+
+        <div class="hero__actions" aria-label="Primary actions">
+          <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
+            <i class="ri-mail-send-line" aria-hidden="true"></i>
+            Email Me
           </a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <header class="hero section__container" id="home">
-        <div class="hero__content">
-          <p class="eyebrow reveal-text">Computer Science Engineering (AI)</p>
-          <h1
-            class="hero__title text-type reveal-text"
-            data-text-type
-            data-texts="Building modern web experiences and scalable backend systems.|Creating responsive interfaces with clean frontend code.|Developing practical web projects, APIs, and automation workflows."
-          >
-            Building modern web experiences and scalable backend systems.
-          </h1>
-          <p class="hero__summary reveal-text">
-            B.Tech Computer Science Engineering student with a strong interest
-            in web development, Artificial Intelligence, backend systems, and
-            automation. Experienced in HTML, CSS, JavaScript, Python scripting,
-            REST API integration, Git workflows, and building responsive
-            user-focused interfaces.
-          </p>
-
-          <div class="hero__actions" aria-label="Primary actions">
-            <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
-              <i class="ri-mail-send-line" aria-hidden="true"></i>
-              Email Me
-            </a>
-            <a class="btn btn--ghost" href="#projects">
-              <i class="ri-folder-code-line" aria-hidden="true"></i>
-              View Projects
-            </a>
-          </div>
-
-          <div class="hero__meta" aria-label="Contact details">
-            <span><i class="ri-map-pin-line" aria-hidden="true"></i>Chandigarh, India</span>
-            <span><i class="ri-phone-line" aria-hidden="true"></i>+91-628495306</span>
-          </div>
+          <a class="btn btn--ghost" href="projects.html">
+            <i class="ri-folder-code-line" aria-hidden="true"></i>
+            View Projects
+          </a>
         </div>
 
-        <div class="avatar-card" aria-label="Aayush Jaiswal profile avatar">
-          <div class="avatar-card__ring">
-            <img
-              src="assets/hacker-avatar.jpg"
-              alt="Hacker-style portfolio avatar"
-            />
-          </div>
-          <div class="avatar-card__body">
-            <span>Portfolio Profile</span>
-            <h2>Aayush Jaiswal</h2>
-            <p>AI student focused on automation, APIs, and backend systems.</p>
-          </div>
-          <div class="hero__panel">
-            <span>Highlights</span>
-            <strong>CGPA 8.9</strong>
-            <strong>100+ DSA</strong>
-            <strong>Web Dev</strong>
-          </div>
+        <div class="hero__meta" aria-label="Contact details">
+          <span><i class="ri-map-pin-line" aria-hidden="true"></i>Chandigarh, India</span>
+          <span><i class="ri-phone-line" aria-hidden="true"></i>+91-628495306</span>
         </div>
-      </header>
+      </div>
 
-      <section class="section__container about" id="about">
-        <div class="section__intro">
-          <p class="eyebrow">About</p>
-          <h2>Practical engineering mindset with an AI-first direction.</h2>
+      <div class="avatar-card" aria-label="Aayush Jaiswal profile avatar">
+        <div class="avatar-card__ring">
+          <img src="assets/hacker-avatar.jpg" alt="Hacker-style portfolio avatar" />
         </div>
-        <div class="about__grid">
-          <p>
-            Aayush Jaiswal is focused on building real-world automation
-            solutions and scalable backend systems. His work combines Python,
-            REST API integration, operating system automation, and disciplined
-            Git workflows.
-          </p>
-          <div class="quickfacts">
-            <div>
-              <span>Current Degree</span>
-              <strong>B.Tech CSE (AI)</strong>
-            </div>
-            <div>
-              <span>College CGPA</span>
-              <strong>8.9</strong>
-            </div>
-            <div>
-              <span>DSA Progress</span>
-              <strong>100+ Problems Solved</strong>
-            </div>
-            <div>
-              <span>Core Strength</span>
-              <strong>Automation Workflows</strong>
-            </div>
-          </div>
+        <div class="avatar-card__body">
+          <span>Portfolio Profile</span>
+          <h2>Aayush Jaiswal</h2>
+          <p>CSE (AI) student focusing on Artificial Intelligence, Machine Learning, APIs, and automation.</p>
         </div>
-      </section>
+        <div class="hero__panel">
+          <span>Highlights</span>
+          <strong>Buildathon 2nd</strong>
+          <strong>AI & ML</strong>
+          <strong>100+ DSA</strong>
+          <strong>Tekathon 5.0</strong>
+        </div>
+      </div>
+    </header>
 
-      <section class="section__container" id="education">
-        <div class="section__intro">
-          <p class="eyebrow">Education</p>
-          <h2>Academic foundation</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline__item">
-            <span class="timeline__year">2025-2029</span>
-            <div>
-              <h3>Chandigarh University</h3>
-              <p>B.Tech in Computer Science Engineering (Artificial Intelligence) - CGPA 8.9</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <span class="timeline__year">2024-2025</span>
-            <div>
-              <h3>St. Soldier Divine Public School</h3>
-              <p>Class XII (PCM) - 92.3%</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <span class="timeline__year">2022-2023</span>
-            <div>
-              <h3>GEMS Cambridge International School, Hoshiarpur</h3>
-              <p>Class X - 96.8%</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section__container" id="projects">
-        <div class="section__intro section__intro--split">
+    <!-- ABOUT SECTION -->
+    <section class="section__container about" id="about">
+      <div class="section__intro">
+        <p class="eyebrow">About</p>
+        <h2>Engineering mindset connecting intelligent AI systems to robust software architecture.</h2>
+      </div>
+      <div class="about__grid">
+        <p>
+          Aayush Jaiswal is a Computer Science Engineering student with an active focus on
+          Artificial Intelligence (AI), Machine Learning (ML), algorithmic problem solving, backend engineering,
+          and automation workflows. Combining analytical rigor in data structures with practical systems knowledge,
+          he builds intelligent algorithms and translates machine learning concepts into impactful software.
+        </p>
+        <div class="quickfacts">
           <div>
-            <p class="eyebrow">Projects</p>
-            <h2>Selected work</h2>
+            <span>Current Degree</span>
+            <strong>B.Tech CSE (AI)</strong>
           </div>
-          <p>
-            Projects centered on automation, API integration, rapid prototyping,
-            and practical problem solving.
-          </p>
+          <div>
+            <span>College CGPA</span>
+            <strong>8.9</strong>
+          </div>
+          <div>
+            <span>Key Focus</span>
+            <strong>AI / ML (Artificial Intelligence & Machine Learning)</strong>
+          </div>
+          <div>
+            <span>Problem Solving</span>
+            <strong>100+ DSA Solved</strong>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="project__grid">
-          <article class="project__card project__card--featured">
-            <div class="project__icon">
-              <i class="ri-mic-line" aria-hidden="true"></i>
-            </div>
-            <div>
-              <p class="project__label">Python Automation</p>
-              <h3>Voice-Controlled PC Automation System</h3>
-              <ul>
-                <li>Designed and developed a voice-controlled automation system to execute operating system commands using Python.</li>
-                <li>Implemented speech recognition to process voice inputs and trigger system-level actions.</li>
-                <li>Integrated REST APIs for automating WhatsApp messaging and email communication.</li>
-                <li>Built scalable automation workflows to handle multiple tasks efficiently.</li>
-                <li>Reduced manual effort and improved productivity through intelligent task automation.</li>
-              </ul>
-              <a class="project__link" href="https://github.com/" target="_blank" rel="noreferrer">
-                <i class="ri-github-fill" aria-hidden="true"></i>
-                GitHub Link
+    <!-- SPECIALIZED MODULES EXPLORATION HUB -->
+    <section class="section__container">
+      <div class="section__intro section__intro--split">
+        <div>
+          <p class="eyebrow">Explore Modules</p>
+          <h2>Specialized Portfolio Hubs</h2>
+        </div>
+        <p>
+          Dedicated interactive learning environments, career roadmaps, and credential showcases.
+        </p>
+      </div>
+
+      <div class="hub-grid">
+        <article class="hub-card hub-card--coa">
+          <div class="hub-card__icon">
+            <i class="ri-cpu-line" aria-hidden="true"></i>
+          </div>
+          <h3>COA Learning Tool</h3>
+          <p>
+            Interactive number-system conversion tool supporting Binary, Octal, Decimal, and Hexadecimal with
+            step-by-step mathematical breakdowns.
+          </p>
+          <a href="coa-tool.html" class="hub-card__link">
+            Open Converter <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="hub-card hub-card--interests">
+          <div class="hub-card__icon">
+            <i class="ri-compass-3-line" aria-hidden="true"></i>
+          </div>
+          <h3>Academic Interests & Goals</h3>
+          <p>
+            Explore core study areas (Data Structures, AI/ML, Web Development, Databases) alongside strategic technical milestones.
+          </p>
+          <a href="interests.html" class="hub-card__link">
+            View Interests & Roadmap <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="hub-card hub-card--gallery">
+          <div class="hub-card__icon">
+            <i class="ri-award-line" aria-hidden="true"></i>
+          </div>
+          <h3>Achievements & Gallery</h3>
+          <p>
+            Full portfolio gallery with filtered views for Azure certifications, Coursera honors, hackathon awards, and
+            departmental seminars.
+          </p>
+          <a href="gallery.html" class="hub-card__link">
+            Explore Gallery <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section__container" id="education">
+      <div class="section__intro">
+        <p class="eyebrow">Education</p>
+        <h2>Academic foundation</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline__item">
+          <span class="timeline__year">2025-2029</span>
+          <div>
+            <h3>Chandigarh University</h3>
+            <p>B.Tech in Computer Science Engineering (Artificial Intelligence) - CGPA 8.9</p>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <span class="timeline__year">2024-2025</span>
+          <div>
+            <h3>St. Soldier Divine Public School</h3>
+            <p>Class XII (PCM) - 92.3%</p>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <span class="timeline__year">2022-2023</span>
+          <div>
+            <h3>GEMS Cambridge International School, Hoshiarpur</h3>
+            <p>Class X - 96.8%</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section__container" id="projects">
+      <div class="section__intro section__intro--split">
+        <div>
+          <p class="eyebrow">Projects & COA Work</p>
+          <h2>Selected work & Coursework</h2>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+          <a href="projects.html" class="btn btn--primary" style="display: inline-flex;">
+            <i class="ri-folder-open-line" aria-hidden="true"></i>
+            View All Projects & Coursework
+          </a>
+        </div>
+      </div>
+
+      <div class="project__grid">
+        <!-- COA Assignment 1 Download Card -->
+        <article class="project__card project__card--featured">
+          <div class="project__icon" style="background: linear-gradient(135deg, #38bdf8, #0284c7); color: #ffffff;">
+            <i class="ri-file-pdf-fill" aria-hidden="true"></i>
+          </div>
+          <div>
+            <p class="project__label">Coursework • 25BAI10042</p>
+            <h3>COA Assignment 1</h3>
+            <ul>
+              <li>Official academic submission for Computer Organization and Architecture (COA).</li>
+              <li>Detailed mathematical calculations for radix base conversions across Binary, Octal, Decimal, and Hexadecimal.</li>
+              <li>Derivations of arithmetic logic unit operations, 2's complement representation, and machine addressing modes.</li>
+              <li>Includes complete verified problem sets and architecture solution notes.</li>
+            </ul>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+              <a class="project__link" href="25bai10042 _Aayush_jaiswal.pdf" download="COA_Assignment_1_25BAI10042.pdf">
+                <i class="ri-download-2-line" aria-hidden="true"></i>
+                Download COA Assignment 1 (PDF)
+              </a>
+              <a class="project__link" href="25bai10042 _Aayush_jaiswal.pdf" target="_blank" rel="noopener noreferrer" style="background: rgba(255, 255, 255, 0.08); border-color: var(--line);">
+                <i class="ri-eye-line" aria-hidden="true"></i>
+                View PDF
               </a>
             </div>
-          </article>
-
-          <article class="project__card">
-            <div class="project__icon">
-              <i class="ri-lightbulb-flash-line" aria-hidden="true"></i>
-            </div>
-            <div>
-              <p class="project__label">Hackathon</p>
-              <h3>IDEA 2.0 Hackathon Project</h3>
-              <ul>
-                <li>Collaborated in a team-based hackathon environment to design and develop an innovative solution under time constraints.</li>
-                <li>Contributed to idea development, system design, and implementation of core features.</li>
-                <li>Applied problem-solving and rapid prototyping skills to build a functional project.</li>
-                <li>Demonstrated teamwork, communication, and adaptability in a competitive setting.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-
-        <div class="minor-projects" aria-label="Minor projects carousel">
-          <div class="minor-projects__heading">
-            <p class="eyebrow">Minor Projects</p>
-            <h3>Practice builds and UI clones</h3>
           </div>
-          <div class="flashcard-track">
-            <div class="flashcard-row">
-              <article class="flashcard">
-                <i class="ri-spotify-fill" aria-hidden="true"></i>
-                <h4>Spotify Clone</h4>
-                <p>Responsive music UI practice with polished layout and media controls.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
-                <h4>Amazon Clone</h4>
-                <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-code-box-line" aria-hidden="true"></i>
-                <h4>JavaScript Practice</h4>
-                <p>Small interactive UI experiments built to strengthen frontend logic.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-terminal-box-line" aria-hidden="true"></i>
-                <h4>Python Utilities</h4>
-                <p>Automation scripts for everyday system tasks and workflow helpers.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-spotify-fill" aria-hidden="true"></i>
-                <h4>Spotify Clone</h4>
-                <p>Responsive music UI practice with polished layout and media controls.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
-                <h4>Amazon Clone</h4>
-                <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-code-box-line" aria-hidden="true"></i>
-                <h4>JavaScript Practice</h4>
-                <p>Small interactive UI experiments built to strengthen frontend logic.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-              <article class="flashcard">
-                <i class="ri-terminal-box-line" aria-hidden="true"></i>
-                <h4>Python Utilities</h4>
-                <p>Automation scripts for everyday system tasks and workflow helpers.</p>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              </article>
-            </div>
+        </article>
+
+        <!-- COA Project 1: Address Simulator Card -->
+        <article class="project__card project__card--featured">
+          <div class="project__icon" style="background: linear-gradient(135deg, var(--accent), #10b981); color: #061311;">
+            <i class="ri-cpu-line" aria-hidden="true"></i>
           </div>
-        </div>
-      </section>
-
-      <section class="section__container skills" id="skills">
-        <div class="section__intro">
-          <p class="eyebrow">Skills</p>
-          <h2>Technical toolkit</h2>
-        </div>
-
-        <div class="skills__layout">
-          <article class="skill__group">
-            <h3><i class="ri-code-s-slash-line" aria-hidden="true"></i>Languages</h3>
-            <div class="tags">
-              <button type="button" class="tag">Python</button>
-              <button type="button" class="tag">C</button>
-              <button type="button" class="tag">C++</button>
-            </div>
-          </article>
-          <article class="skill__group">
-            <h3><i class="ri-window-line" aria-hidden="true"></i>Web</h3>
-            <div class="tags">
-              <button type="button" class="tag">HTML</button>
-              <button type="button" class="tag">CSS</button>
-              <button type="button" class="tag">JavaScript</button>
-              <button type="button" class="tag">Express.js</button>
-              <button type="button" class="tag">Node.js</button>
-              <button type="button" class="tag">MongoDB</button>
-            </div>
-          </article>
-          <article class="skill__group">
-            <h3><i class="ri-tools-line" aria-hidden="true"></i>Tools</h3>
-            <div class="tags">
-              <button type="button" class="tag">Git</button>
-              <button type="button" class="tag">GitHub</button>
-              <button type="button" class="tag">Netlify</button>
-            </div>
-          </article>
-          <article class="skill__group">
-            <h3><i class="ri-node-tree" aria-hidden="true"></i>Concepts</h3>
-            <div class="tags">
-              <button type="button" class="tag">REST APIs</button>
-              <button type="button" class="tag">Automation</button>
-              <button type="button" class="tag">Backend Development</button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section__container credentials">
-        <div class="section__intro section__intro--split">
           <div>
-            <p class="eyebrow">Credentials</p>
-            <h2>Certifications and achievements</h2>
+            <p class="project__label">COA Project 1</p>
+            <h3>COA Address Simulator</h3>
+            <ul>
+              <li>Designed and built an interactive architecture simulation tool for modeling processor memory addressing.</li>
+              <li>Simulates effective address calculation for direct, indirect, indexed, and base-register modes.</li>
+              <li>Visualizes logical to physical address translation, paging offsets, and hardware memory mapping.</li>
+              <li>Open source repository with modular architecture and clean documentation.</li>
+            </ul>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+              <a class="project__link" href="https://github.com/Aayush12-ai/Address-simulator.git" target="_blank" rel="noreferrer">
+                <i class="ri-github-fill" aria-hidden="true"></i>
+                COA Address Simulator GitHub
+              </a>
+              <a class="project__link" href="coa-tool.html" style="background: rgba(255, 255, 255, 0.08); border-color: var(--line);">
+                <i class="ri-calculator-line" aria-hidden="true"></i>
+                COA Number Tool
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="credential__grid">
-          <article>
-            <i class="ri-microsoft-line" aria-hidden="true"></i>
-            <h3>Microsoft Azure Certified</h3>
-            <p>Cloud fundamentals, Azure services, and AI/ML tools.</p>
-          </article>
-          <article>
-            <i class="ri-brain-line" aria-hidden="true"></i>
-            <h3>Coursera AI & Machine Learning Certification</h3>
-            <p>Foundational AI and machine learning concepts.</p>
-          </article>
-          <article>
-            <i class="ri-trophy-line" aria-hidden="true"></i>
-            <h3>100+ DSA Problems</h3>
-            <p>Solved data structures and algorithms problems on coding platforms.</p>
-          </article>
-          <article>
-            <i class="ri-team-line" aria-hidden="true"></i>
-            <h3>Additional Strengths</h3>
-            <p>Team collaboration, analytical thinking, and problem solving.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section__container" id="contact">
-        <div class="contact__card">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's build useful automation together.</h2>
-          <p>
-            Available for learning-focused collaborations, hackathon work, and
-            backend or automation projects.
-          </p>
-
-          <div class="contact__actions">
-            <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
-              <i class="ri-mail-line" aria-hidden="true"></i>
-              aayush.jaiswal1917@gmail.com
-            </a>
-            <a class="btn btn--ghost" href="tel:+91628495306">
-              <i class="ri-phone-line" aria-hidden="true"></i>
-              +91-628495306
-            </a>
+        <article class="project__card">
+          <div class="project__icon">
+            <i class="ri-mic-line" aria-hidden="true"></i>
           </div>
-
-          <div class="socials" aria-label="Social links">
-            <a class="socials__gmail" href="mailto:aayush.jaiswal1917@gmail.com" aria-label="Gmail">
-              <i class="ri-mail-fill" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn profile">
-              <i class="ri-linkedin-fill" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/" aria-label="GitHub profile">
+          <div>
+            <p class="project__label">Python Automation</p>
+            <h3>Voice-Controlled PC Automation System</h3>
+            <ul>
+              <li>Designed and developed a voice-controlled automation system to execute operating system commands using
+                Python.</li>
+              <li>Implemented speech recognition to process voice inputs and trigger system-level actions.</li>
+              <li>Integrated REST APIs for automating WhatsApp messaging and email communication.</li>
+              <li>Reduced manual effort and improved productivity through intelligent task automation.</li>
+            </ul>
+            <a class="project__link" href="https://github.com/" target="_blank" rel="noreferrer">
               <i class="ri-github-fill" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram profile">
-              <i class="ri-instagram-line" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/" aria-label="Twitter profile">
-              <i class="ri-twitter-fill" aria-hidden="true"></i>
+              GitHub Link
             </a>
           </div>
+        </article>
+
+        <article class="project__card">
+          <div class="project__icon">
+            <i class="ri-lightbulb-flash-line" aria-hidden="true"></i>
+          </div>
+          <div>
+            <p class="project__label">Hackathon</p>
+            <h3>IDEA 2.0 Hackathon Project</h3>
+            <ul>
+              <li>Collaborated in a team-based hackathon environment to design and develop an innovative solution under
+                time constraints.</li>
+              <li>Contributed to idea development, system design, and implementation of core features.</li>
+              <li>Applied problem-solving and rapid prototyping skills to build a functional project.</li>
+              <li>Demonstrated teamwork, communication, and adaptability in a competitive setting.</li>
+            </ul>
+            <a class="project__link" href="gallery.html">
+              <i class="ri-award-line" aria-hidden="true"></i>
+              View Milestone
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="minor-projects" aria-label="Minor projects carousel">
+        <div class="minor-projects__heading">
+          <p class="eyebrow">Minor Projects</p>
+          <h3>Practice builds and UI clones</h3>
         </div>
-      </section>
-    </main>
+        <div class="flashcard-track">
+          <div class="flashcard-row">
+            <article class="flashcard">
+              <i class="ri-spotify-fill" aria-hidden="true"></i>
+              <h4>Spotify Clone</h4>
+              <p>Responsive music UI practice with polished layout and media controls.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
+              <h4>Amazon Clone</h4>
+              <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-code-box-line" aria-hidden="true"></i>
+              <h4>JavaScript Practice</h4>
+              <p>Small interactive UI experiments built to strengthen frontend logic.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-terminal-box-line" aria-hidden="true"></i>
+              <h4>Python Utilities</h4>
+              <p>Automation scripts for everyday system tasks and workflow helpers.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-spotify-fill" aria-hidden="true"></i>
+              <h4>Spotify Clone</h4>
+              <p>Responsive music UI practice with polished layout and media controls.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
+              <h4>Amazon Clone</h4>
+              <p>E-commerce landing page clone focused on HTML, CSS, and JavaScript.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-code-box-line" aria-hidden="true"></i>
+              <h4>JavaScript Practice</h4>
+              <p>Small interactive UI experiments built to strengthen frontend logic.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="flashcard">
+              <i class="ri-terminal-box-line" aria-hidden="true"></i>
+              <h4>Python Utilities</h4>
+              <p>Automation scripts for everyday system tasks and workflow helpers.</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
-    </footer>
+    <!-- SKILLS SECTION -->
+    <section class="section__container skills" id="skills">
+      <div class="section__intro">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical toolkit</h2>
+      </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+      <div class="skills__layout">
+        <article class="skill__group">
+          <h3><i class="ri-code-s-slash-line" aria-hidden="true"></i>Languages</h3>
+          <div class="tags">
+            <button type="button" class="tag">Python</button>
+            <button type="button" class="tag">C</button>
+            <button type="button" class="tag">C++</button>
+            <button type="button" class="tag">Assembly Basics</button>
+          </div>
+        </article>
+        <article class="skill__group">
+          <h3><i class="ri-window-line" aria-hidden="true"></i>Web & Backend</h3>
+          <div class="tags">
+            <button type="button" class="tag">HTML</button>
+            <button type="button" class="tag">CSS</button>
+            <button type="button" class="tag">JavaScript</button>
+            <button type="button" class="tag">Express.js</button>
+            <button type="button" class="tag">Node.js</button>
+            <button type="button" class="tag">MongoDB</button>
+          </div>
+        </article>
+        <article class="skill__group">
+          <h3><i class="ri-tools-line" aria-hidden="true"></i>Tools & Concepts</h3>
+          <div class="tags">
+            <button type="button" class="tag">Git</button>
+            <button type="button" class="tag">GitHub</button>
+            <button type="button" class="tag">REST APIs</button>
+            <button type="button" class="tag">Automation</button>
+            <button type="button" class="tag">Netlify</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section__container" id="contact">
+      <div class="contact__card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's collaborate on systems, COA tools, or AI projects.</h2>
+        <p>
+          Open for learning-focused collaborations, hackathon teams, academic research, and
+          backend or automation engineering.
+        </p>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:aayush.jaiswal1917@gmail.com">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            aayush.jaiswal1917@gmail.com
+          </a>
+          <a class="btn btn--ghost" href="tel:+91628495306">
+            <i class="ri-phone-line" aria-hidden="true"></i>
+            +91-628495306
+          </a>
+        </div>
+
+        <div class="socials" aria-label="Social links">
+          <a class="socials__gmail" href="mailto:aayush.jaiswal1917@gmail.com" aria-label="Gmail">
+            <i class="ri-mail-fill" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aayush-jaiswal-68a816296/" aria-label="LinkedIn profile" target="_blank"
+            rel="noreferrer">
+            <i class="ri-linkedin-fill" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/Aayush12-ai" aria-label="GitHub profile" target="_blank" rel="noreferrer">
+            <i class="ri-github-fill" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram profile" target="_blank" rel="noreferrer">
+            <i class="ri-instagram-line" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/" aria-label="Twitter profile" target="_blank" rel="noreferrer">
+            <i class="ri-twitter-fill" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

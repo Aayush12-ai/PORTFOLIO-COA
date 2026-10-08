@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Achievements, certifications, academic milestones, hackathons, and technical gallery of Aayush Jaiswal, B.Tech CSE AI student."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Achievements & Gallery | Aayush Jaiswal</title>
+  </head>
+  <body>
+    <div class="side-rays-container" id="side-rays" aria-hidden="true">
+      <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#home" class="brand" aria-label="Aayush Jaiswal home">
+        <span class="brand__mark">AJ</span>
+        <span>Aayush Jaiswal</span>
+      </a>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <i class="ri-sun-line" aria-hidden="true"></i>
+        </button>
+
+        <button class="nav__toggle" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <i class="ri-menu-3-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="interests.html">Academic Interests / Future Goals</a></li>
+        <li><a href="coa-tool.html">COA Learning Tool</a></li>
+        <li><a href="gallery.html" class="active">Gallery & Achievements</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav__resume">
+            <i class="ri-download-2-line" aria-hidden="true"></i>
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Page Header -->
+      <section class="section__container page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+          <span>Achievements & Gallery</span>
+        </div>
+        <div class="section__intro">
+          <p class="eyebrow">Showcase & Milestones</p>
+          <h1>Achievements, Credentials & Gallery</h1>
+          <p style="color:var(--muted);margin-top:1rem;font-size:1.05rem;line-height:1.75;">
+            A curated portfolio gallery of professional industry certifications, hackathon achievements,
+            academic recognition, departmental seminars, and engineering milestones.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main Gallery Section -->
+      <section class="section__container" style="padding-top:0;">
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs" aria-label="Filter achievements">
+          <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+          <button type="button" class="filter-btn" data-filter="hackathons">Hackathons</button>
+          <button type="button" class="filter-btn" data-filter="certifications">Certifications</button>
+          <button type="button" class="filter-btn" data-filter="academic">Academic Honors</button>
+          <button type="button" class="filter-btn" data-filter="projects">Featured Projects</button>
+        </div>
+
+        <div class="gallery__grid">
+          <!-- 2nd Place - Bharat Buildathon (IDC) -->
+          <article class="gallery__card" data-category="hackathons">
+            <div class="gallery__top">
+              <div class="gallery__icon" style="background: linear-gradient(135deg, #f59e0b, #fbbf24); color: #061311;">
+                <i class="ri-trophy-fill" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.4);">2nd Place</span>
+            </div>
+            <h3>2nd Place - Bharat Buildathon</h3>
+            <p>Achieved 2nd Place in the national Bharat Buildathon organized by IDC, engineering an innovative technical solution under intensive competitive hackathon evaluation.</p>
+            <div class="gallery__meta">
+              <i class="ri-medal-fill" aria-hidden="true"></i>
+              <span>Organised by IDC • Hackathon Winner</span>
+            </div>
+          </article>
+
+          <!-- Selected in Tekathon 5.0 -->
+          <article class="gallery__card" data-category="hackathons">
+            <div class="gallery__top">
+              <div class="gallery__icon" style="background: linear-gradient(135deg, var(--accent), #10b981); color: #061311;">
+                <i class="ri-fire-fill" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Selected Finalist</span>
+            </div>
+            <h3>Selected in Tekathon 5.0</h3>
+            <p>Selected among top competing teams in Tekathon 5.0, demonstrating rapid prototyping, technical architecture, and problem-solving excellence.</p>
+            <div class="gallery__meta">
+              <i class="ri-flashlight-fill" aria-hidden="true"></i>
+              <span>Tekathon 5.0 • Hackathon Selection</span>
+            </div>
+          </article>
+
+          <!-- IDEA 2.0 Hackathon Finalist -->
+          <article class="gallery__card" data-category="hackathons">
+            <div class="gallery__top">
+              <div class="gallery__icon">
+                <i class="ri-team-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Hackathons</span>
+            </div>
+            <h3>IDEA 2.0 Hackathon Finalist</h3>
+            <p>Collaborated in an intensive sprint environment to design, architect, and prototype a software solution solving real-world productivity challenges.</p>
+            <div class="gallery__meta">
+              <i class="ri-flashlight-line" aria-hidden="true"></i>
+              <span>Competitive Hackathon</span>
+            </div>
+          </article>
+
+          <!-- Microsoft Azure Fundamentals -->
+          <article class="gallery__card" data-category="certifications">
+            <div class="gallery__top">
+              <div class="gallery__icon">
+                <i class="ri-microsoft-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Certification</span>
+            </div>
+            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+            <p>Certified in Microsoft Azure core infrastructure, cloud compute services, virtual networking, security, privacy compliance, and cloud AI workloads.</p>
+            <div class="gallery__meta">
+              <i class="ri-shield-check-line" aria-hidden="true"></i>
+              <span>Microsoft Certified</span>
+            </div>
+          </article>
+
+          <!-- Coursera AI Specialization -->
+          <article class="gallery__card" data-category="certifications">
+            <div class="gallery__top">
+              <div class="gallery__icon">
+                <i class="ri-brain-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Certification</span>
+            </div>
+            <h3>Coursera AI & Machine Learning Specialization</h3>
+            <p>Mastered machine learning fundamentals, deep learning, gradient descent optimization, regularization, neural networks, and supervised/unsupervised learning techniques.</p>
+            <div class="gallery__meta">
+              <i class="ri-award-line" aria-hidden="true"></i>
+              <span>Coursera Honors</span>
+            </div>
+          </article>
+
+          <!-- 100+ DSA Milestone -->
+          <article class="gallery__card" data-category="academic">
+            <div class="gallery__top">
+              <div class="gallery__icon">
+                <i class="ri-code-box-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Academic</span>
+            </div>
+            <h3>100+ DSA Problems Milestone</h3>
+            <p>Demonstrated consistent problem-solving across LeetCode and GeeksforGeeks, solving fundamental and intermediate problems in arrays, trees, binary search, and recursion.</p>
+            <div class="gallery__meta">
+              <i class="ri-code-box-line" aria-hidden="true"></i>
+              <span>LeetCode & GFG</span>
+            </div>
+          </article>
+
+          <!-- COA Project 1: Address Simulator -->
+          <article class="gallery__card" data-category="projects">
+            <div class="gallery__top">
+              <div class="gallery__icon" style="background: linear-gradient(135deg, var(--accent), #10b981); color: #061311;">
+                <i class="ri-cpu-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">COA Project 1</span>
+            </div>
+            <h3>COA Address Simulator</h3>
+            <p>Interactive processor memory simulation engine modeling effective address calculations, offset lookups, and hardware memory translations.</p>
+            <div class="gallery__meta">
+              <i class="ri-github-fill" aria-hidden="true"></i>
+              <a href="https://github.com/Aayush12-ai/Address-simulator.git" target="_blank" rel="noreferrer" style="color:var(--accent);font-weight:700;">GitHub Repository &rarr;</a>
+            </div>
+          </article>
+
+          <!-- COA Assignment 1 -->
+          <article class="gallery__card" data-category="academic">
+            <div class="gallery__top">
+              <div class="gallery__icon" style="background: linear-gradient(135deg, #38bdf8, #0284c7); color: #ffffff;">
+                <i class="ri-file-pdf-fill" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Coursework</span>
+            </div>
+            <h3>COA Assignment 1 (25BAI10042)</h3>
+            <p>Complete academic solution for Computer Architecture radix representations, ALU logic, binary math, and memory addressing modes.</p>
+            <div class="gallery__meta">
+              <i class="ri-download-2-line" aria-hidden="true"></i>
+              <a href="25bai10042 _Aayush_jaiswal.pdf" download="COA_Assignment_1_25BAI10042.pdf" style="color:var(--accent);font-weight:700;">Download PDF &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Voice-Controlled PC Automation -->
+          <article class="gallery__card" data-category="projects">
+            <div class="gallery__top">
+              <div class="gallery__icon">
+                <i class="ri-mic-line" aria-hidden="true"></i>
+              </div>
+              <span class="gallery__badge">Projects</span>
+            </div>
+            <h3>Voice-Controlled PC Automation System</h3>
+            <p>Developed an OS automation suite using Python speech recognition and REST APIs for seamless hands-free workflow automation.</p>
+            <div class="gallery__meta">
+              <i class="ri-git-branch-line" aria-hidden="true"></i>
+              <span>Open Source Build</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

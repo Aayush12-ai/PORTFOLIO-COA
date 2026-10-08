@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic interests and future technical goals of Aayush Jaiswal, B.Tech CSE AI student focusing on Data Structures & Algorithms, Artificial Intelligence, Web Development, and Database Systems."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Academic Interests & Future Goals | Aayush Jaiswal</title>
+  </head>
+  <body>
+    <div class="side-rays-container" id="side-rays" aria-hidden="true">
+      <canvas id="side-rays-canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#home" class="brand" aria-label="Aayush Jaiswal home">
+        <span class="brand__mark">AJ</span>
+        <span>Aayush Jaiswal</span>
+      </a>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <i class="ri-sun-line" aria-hidden="true"></i>
+        </button>
+
+        <button class="nav__toggle" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <i class="ri-menu-3-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="interests.html" class="active">Academic Interests / Future Goals</a></li>
+        <li><a href="coa-tool.html">COA Learning Tool</a></li>
+        <li><a href="gallery.html">Gallery & Achievements</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav__resume">
+            <i class="ri-download-2-line" aria-hidden="true"></i>
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Page Header -->
+      <section class="section__container page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+          <span>Academic Interests & Goals</span>
+        </div>
+        <div class="section__intro">
+          <p class="eyebrow">Academic & Career Roadmap</p>
+          <h1>Academic Interests & Technical Aspirations</h1>
+          <p style="color:var(--muted);margin-top:1rem;font-size:1.05rem;line-height:1.75;">
+            An in-depth overview of the computer science disciplines driving my academic pursuits,
+            alongside short-term milestones and long-term career aspirations in systems and software engineering.
+          </p>
+        </div>
+      </section>
+
+      <!-- ACADEMIC INTERESTS SECTION -->
+      <section class="section__container" id="interests" style="padding-top:0;">
+        <div class="section__intro section__intro--split">
+          <div>
+            <p class="eyebrow">Academic Disciplines</p>
+            <h2>Core Areas of Study</h2>
+          </div>
+          <p>
+            Key academic domains that form the foundation of my computer science curriculum and engineering explorations.
+          </p>
+        </div>
+
+        <div class="interests__grid">
+          <article class="interest__card">
+            <div class="interest__icon">
+              <i class="ri-node-tree" aria-hidden="true"></i>
+            </div>
+            <h3>Data Structures & Algorithms</h3>
+            <p>
+              Practicing analytical problem solving with optimal time/space complexities across balanced search trees, graphs, dynamic programming, divide-and-conquer, and greedy strategies.
+            </p>
+            <span class="interest__tag">Algorithmic Efficiency</span>
+          </article>
+
+          <article class="interest__card">
+            <div class="interest__icon">
+              <i class="ri-brain-line" aria-hidden="true"></i>
+            </div>
+            <h3>Artificial Intelligence & ML</h3>
+            <p>
+              Investigating deep learning architectures, convolutional & transformer neural networks, loss function optimization, and deploying intelligent models on real-time backend pipelines.
+            </p>
+            <span class="interest__tag">Intelligent Systems</span>
+          </article>
+
+          <article class="interest__card">
+            <div class="interest__icon">
+              <i class="ri-global-line" aria-hidden="true"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Architecting responsive user interfaces, modular CSS design systems, scalable backend RESTful microservices, and asynchronous client-server communication.
+            </p>
+            <span class="interest__tag">Full Stack Development</span>
+          </article>
+
+          <article class="interest__card">
+            <div class="interest__icon">
+              <i class="ri-database-2-line" aria-hidden="true"></i>
+            </div>
+            <h3>Database Systems</h3>
+            <p>
+              Designing relational schemas, database normalization, B-tree indexing strategies, ACID transaction management, and high-throughput NoSQL document data stores.
+            </p>
+            <span class="interest__tag">Data Persistence</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- FUTURE GOALS SECTION (Lavender Theme & Interactive Box Ladder) -->
+      <section class="section__container goals-lavender-section" id="goals">
+        <div class="section__intro section__intro--split">
+          <div>
+            <p class="eyebrow eyebrow--lavender">
+              <i class="ri-roadmap-line" aria-hidden="true"></i>
+              Career &amp; Technical Roadmap
+            </p>
+            <h2>Future Technical Goals</h2>
+          </div>
+          <p>
+            An interactive multi-tier ladder diagram tracking progressive milestones from algorithmic foundations up to scalable AI-accelerated engineering mastery. Click any rung to inspect specific targets.
+          </p>
+        </div>
+
+        <div class="ladder-container">
+          <!-- Ladder Controls & Milestone Status -->
+          <div class="ladder-progress-bar-wrapper">
+            <div class="ladder-progress-info">
+              <i class="ri-stairs-line" aria-hidden="true"></i>
+              <div class="ladder-progress-text">
+                <strong>Progressive Engineering Ladder (4-Stage Milestone Path)</strong>
+                <span>Ascending from algorithmic problem solving to high-impact distributed systems</span>
+              </div>
+            </div>
+
+            <div class="ladder-view-toggle">
+              <button type="button" class="ladder-toggle-btn active" id="btn-view-ladder" title="Ladder Stepper View">
+                <i class="ri-git-commit-line" aria-hidden="true"></i> Ladder View
+              </button>
+              <button type="button" class="ladder-toggle-btn" id="btn-view-grid" title="Grid Matrix View">
+                <i class="ri-grid-fill" aria-hidden="true"></i> Grid View
+              </button>
+            </div>
+          </div>
+
+          <!-- INTERACTIVE BOX LADDER (Ascending 1 to 4) -->
+          <div class="box-ladder" id="box-ladder">
+            <!-- LEVEL 1: Advanced DSA -->
+            <article class="ladder-rung active" data-rung="1" tabindex="0" role="button" aria-expanded="true">
+              <div class="rung-connector" aria-label="Level 1">
+                <span>01</span>
+              </div>
+              <div class="rung-card">
+                <div class="rung-header">
+                  <span class="rung-level-badge">
+                    <i class="ri-node-tree" aria-hidden="true"></i> Level 01 &bull; Algorithmic Rigor
+                  </span>
+                  <span class="rung-status-badge active-status">
+                    <i class="ri-time-line" aria-hidden="true"></i> 100+ DSA Solved &bull; Expanding
+                  </span>
+                </div>
+                <h3 class="rung-title">Advanced Data Structures &amp; Problem Solving</h3>
+                <p class="rung-summary">
+                  Elevating computational problem-solving across complex tree structures, graph traversal, dynamic programming, and greedy optimization algorithms.
+                </p>
+                <div class="rung-details">
+                  <ul class="rung-actions-list">
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Solve advanced problems on LeetCode and GeeksforGeeks emphasizing 2D dynamic programming, topological sorting, and shortest paths.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Achieve rigorous time/space complexity optimization (Big-O analysis) for critical search and graph algorithms.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Participate in competitive programming contests, hackathons, and algorithm design sprints.</span>
+                    </li>
+                  </ul>
+                  <div class="rung-skills-tags">
+                    <span class="rung-skill-pill">Dynamic Programming</span>
+                    <span class="rung-skill-pill">Graph Algorithms (Dijkstra, BFS/DFS)</span>
+                    <span class="rung-skill-pill">Binary Trees &amp; Heaps</span>
+                    <span class="rung-skill-pill">Complexity Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- LEVEL 2: Full-Stack Systems -->
+            <article class="ladder-rung active" data-rung="2" tabindex="0" role="button" aria-expanded="true">
+              <div class="rung-connector" aria-label="Level 2">
+                <span>02</span>
+              </div>
+              <div class="rung-card">
+                <div class="rung-header">
+                  <span class="rung-level-badge">
+                    <i class="ri-code-s-slash-line" aria-hidden="true"></i> Level 02 &bull; Applied Engineering
+                  </span>
+                  <span class="rung-status-badge active-status">
+                    <i class="ri-loader-4-line" aria-hidden="true"></i> In Active Build
+                  </span>
+                </div>
+                <h3 class="rung-title">Full-Stack Web Applications &amp; Microservices</h3>
+                <p class="rung-summary">
+                  Engineering robust, end-to-end applications with responsive design systems, RESTful microservices, ACID-compliant databases, and secure authentication.
+                </p>
+                <div class="rung-details">
+                  <ul class="rung-actions-list">
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Build full-stack web platforms with modern modular Vanilla CSS/JS and component-driven architectures.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Develop secure RESTful API backends with JWT authentication, role-based authorization, and schema normalization.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Create specialized interactive learning tools (such as the interactive COA Base Conversion visualizer).</span>
+                    </li>
+                  </ul>
+                  <div class="rung-skills-tags">
+                    <span class="rung-skill-pill">Full-Stack Web</span>
+                    <span class="rung-skill-pill">RESTful APIs</span>
+                    <span class="rung-skill-pill">Relational &amp; NoSQL DBs</span>
+                    <span class="rung-skill-pill">Authentication &amp; JWT</span>
+                    <span class="rung-skill-pill">UI/UX Systems</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- LEVEL 3: Applied AI/ML -->
+            <article class="ladder-rung" data-rung="3" tabindex="0" role="button" aria-expanded="false">
+              <div class="rung-connector" aria-label="Level 3">
+                <span>03</span>
+              </div>
+              <div class="rung-card">
+                <div class="rung-header">
+                  <span class="rung-level-badge">
+                    <i class="ri-brain-line" aria-hidden="true"></i> Level 03 &bull; Specialized AI
+                  </span>
+                  <span class="rung-status-badge">
+                    <i class="ri-compass-3-line" aria-hidden="true"></i> Upcoming Milestone
+                  </span>
+                </div>
+                <h3 class="rung-title">Applied AI/ML &amp; Intelligent Backend Automation</h3>
+                <p class="rung-summary">
+                  Integrating deep learning models, computer vision pipelines, and speech recognition systems directly with production backend infrastructure.
+                </p>
+                <div class="rung-details">
+                  <ul class="rung-actions-list">
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Design deep neural networks (CNNs, Transformers) for speech emotion recognition and multimodal sensor analysis.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Deploy asynchronous inference pipelines with optimized latency on containerized backend microservices.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Build interactive AI-assisted developer utilities and accessible interfaces for real-time human-computer interaction.</span>
+                    </li>
+                  </ul>
+                  <div class="rung-skills-tags">
+                    <span class="rung-skill-pill">Deep Learning</span>
+                    <span class="rung-skill-pill">Speech Emotion AI</span>
+                    <span class="rung-skill-pill">Model Serving</span>
+                    <span class="rung-skill-pill">Python / PyTorch</span>
+                    <span class="rung-skill-pill">MLOps</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- LEVEL 4: Scalable Systems & Pinnacle Impact -->
+            <article class="ladder-rung" data-rung="4" tabindex="0" role="button" aria-expanded="false">
+              <div class="rung-connector" aria-label="Level 4">
+                <span>04</span>
+              </div>
+              <div class="rung-card">
+                <div class="rung-header">
+                  <span class="rung-level-badge">
+                    <i class="ri-rocket-line" aria-hidden="true"></i> Level 04 &bull; Pinnacle Impact
+                  </span>
+                  <span class="rung-status-badge">
+                    <i class="ri-flag-2-line" aria-hidden="true"></i> Long-Term Vision
+                  </span>
+                </div>
+                <h3 class="rung-title">Scalable High-Throughput Architectures &amp; Systems Engineering</h3>
+                <p class="rung-summary">
+                  Architecting resilient distributed microservices, low-latency data pipelines, hardware-accelerated processing, and open-source tooling.
+                </p>
+                <div class="rung-details">
+                  <ul class="rung-actions-list">
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Design high-throughput distributed microservices with horizontal scaling, load balancing, and fault-tolerant replication.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Pioneer hardware-accelerated computation workflows bridging custom processor architectures and AI workloads.</span>
+                    </li>
+                    <li class="rung-action-item">
+                      <i class="ri-arrow-right-s-fill" aria-hidden="true"></i>
+                      <span>Contribute to open-source systems software and developer infrastructure used by global engineering communities.</span>
+                    </li>
+                  </ul>
+                  <div class="rung-skills-tags">
+                    <span class="rung-skill-pill">Distributed Systems</span>
+                    <span class="rung-skill-pill">High-Throughput Backends</span>
+                    <span class="rung-skill-pill">Hardware-Accelerated AI</span>
+                    <span class="rung-skill-pill">Cloud Infrastructure</span>
+                    <span class="rung-skill-pill">Open Source</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- ALTERNATE GRID VIEW (Shown when user toggles) -->
+          <div class="goals-grid-view" id="goals-grid">
+            <article class="rung-card">
+              <div class="rung-header">
+                <span class="rung-level-badge"><i class="ri-node-tree" aria-hidden="true"></i> Level 01</span>
+                <span class="rung-status-badge active-status"><i class="ri-time-line" aria-hidden="true"></i> 100+ Solved</span>
+              </div>
+              <h3 class="rung-title">Advanced Data Structures &amp; Algorithms</h3>
+              <p class="rung-summary">Targeting graph algorithms, dynamic programming, and optimal Big-O time/space complexities.</p>
+              <div class="rung-skills-tags">
+                <span class="rung-skill-pill">DP</span>
+                <span class="rung-skill-pill">Graphs</span>
+                <span class="rung-skill-pill">Trees</span>
+              </div>
+            </article>
+
+            <article class="rung-card">
+              <div class="rung-header">
+                <span class="rung-level-badge"><i class="ri-code-s-slash-line" aria-hidden="true"></i> Level 02</span>
+                <span class="rung-status-badge active-status"><i class="ri-loader-4-line" aria-hidden="true"></i> Active Build</span>
+              </div>
+              <h3 class="rung-title">Full-Stack Web &amp; Microservices</h3>
+              <p class="rung-summary">Architecting responsive web apps, REST APIs, databases, and interactive tools.</p>
+              <div class="rung-skills-tags">
+                <span class="rung-skill-pill">Full Stack</span>
+                <span class="rung-skill-pill">REST APIs</span>
+                <span class="rung-skill-pill">Databases</span>
+              </div>
+            </article>
+
+            <article class="rung-card">
+              <div class="rung-header">
+                <span class="rung-level-badge"><i class="ri-brain-line" aria-hidden="true"></i> Level 03</span>
+                <span class="rung-status-badge"><i class="ri-compass-3-line" aria-hidden="true"></i> Upcoming</span>
+              </div>
+              <h3 class="rung-title">Applied AI/ML &amp; Systems Integration</h3>
+              <p class="rung-summary">Building speech emotion pipelines, neural networks, and deploying AI models to web services.</p>
+              <div class="rung-skills-tags">
+                <span class="rung-skill-pill">Deep Learning</span>
+                <span class="rung-skill-pill">Speech AI</span>
+                <span class="rung-skill-pill">MLOps</span>
+              </div>
+            </article>
+
+            <article class="rung-card">
+              <div class="rung-header">
+                <span class="rung-level-badge"><i class="ri-rocket-line" aria-hidden="true"></i> Level 04</span>
+                <span class="rung-status-badge"><i class="ri-flag-2-line" aria-hidden="true"></i> Pinnacle</span>
+              </div>
+              <h3 class="rung-title">Scalable Distributed Systems &amp; Hardware Acceleration</h3>
+              <p class="rung-summary">Engineering high-throughput backends, fault-tolerant architectures, and contributing to open source systems.</p>
+              <div class="rung-skills-tags">
+                <span class="rung-skill-pill">Distributed Backends</span>
+                <span class="rung-skill-pill">High Throughput</span>
+                <span class="rung-skill-pill">Hardware Acceleration</span>
+                <span class="rung-skill-pill">Open Source</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2026 Aayush Jaiswal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
